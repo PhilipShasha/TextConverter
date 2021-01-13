@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<title>Text converter</title>
+		<meta charset = "utf-8"/>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<link rel = "stylesheet" href = 'styles.css'/>
+		<script src = "scripts.js"></script>
+	</head>
+	
+	<body>
+		<br></br>
+		
+		<h1 id = "thetitle">Text converter</h1>
+		
+		<br></br>
+		
+		<div class = "container">
+			<div class = "row">
+				<div class = "col">
+					<textarea placeholder = "Input", id = "textarea", oninput = "updatecounts(this.value)""></textarea>
+				</div>
+				<div class = "col">
+					<textarea placeholder = "Output", id = "textarea2""></textarea>
+				</div>
+			</div>
+		</div>
+		
+		<br></br>
+		
+		<div class = "container">
+			<button onclick = "lowercase()">Lower case</button>
+			<button onclick = "uppercase()">Upper case</button>
+			<button onclick = "sentencecase()">Sentence case</button>
+			<button onclick = "titlecase()">Title case</button>
+			<button onclick = "swapcase()">Swap case</button>
+			<button onclick = "alternatingcase()">Alternating case</button>
+			<button onclick = "checkpalindrome()">Check if palindrome</button>
+			<button onclick = "reversetext()">Reverse text</button>
+			<button onclick = "texttobinary()">Text to binary</button>
+			<button onclick = "binarytotext()">Binary to text</button>
+			<button onclick = "hextobinary()">Hex to binary</button>
+			<button onclick = "binarytohex()">Binary to hex</button>
+			<button onclick = "cleararea()">Clear all</button>
+			<button onclick = "copy()">Copy to clipboard</button>	
+		</div>
+		
+		<br></br>
+		
+		<div class = "container", id = "info">
+			Character count: <span id ="charcount">0</span> |
+			Word count: <span id ="wordcount">0</span> |
+			Line count: <span id ="linecount">0</span>
+		</div>
+		<br></br>
+		
+		</body>
+	
+</html>
